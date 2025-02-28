@@ -45,8 +45,8 @@ void setup(){
   ex2=630;
   ex3=620;
   ey1=480;
-  ey1=480;
-  ey1=480;
+  ey2=480;
+  ey3=480;
   
   
  
@@ -305,7 +305,13 @@ void draw() {
   ex1+=1;
   ex2+=1;
   ex3+=1;
+  if (ex3>1030){
+    ex1=640;
+    ex2=630;
+    ex3=620;
+  }
   
+    
   fill(255);
   ellipse(ex1,ey1,10,10);
   ellipse(ex2,ey2,10,10);
